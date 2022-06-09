@@ -1,12 +1,27 @@
-.nav {
-  height: 140px;
-  margin: 0 240px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.bg-slider {
+  position: relative;
+  background-image: url(/images/bg1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 900px;
 }
 
-.nav .logo h1 a img {
+.nav {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+}
+
+.nav-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-wrap .logo h1 a img {
   width: 200px;
 }
 
@@ -23,4 +38,172 @@
 
 .navlist li a {
   font-size: 22px;
+  color: #fff;
+}
+
+.dimmed-layer {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.bg-write {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-30%);
+}
+
+.bg-write h2 {
+  font-family: 'GmarketSansMedium';
+  font-size: 64px;
+  text-align: center;
+  color: #fff;
+  line-height: 100px;
+}
+
+.bg-write h3 {
+  font-family: 'GmarketSansMedium';
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.bg-write h3 span {
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+  background-image: url(/images/place.png);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.bg-write p {
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.bg-write button {
+  display: block;
+  margin: 20px auto 0;
+  width: 140px;
+  height: 30px;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.bg-write button a {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  margin-top: 170px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.dot:first-child {
+  background-color: #85858e;
+  border: 2px solid #fff;
+}
+
+.dot:last-child {
+  margin-right: 0;
+}
+
+.slider-button .left-button,
+.slider-button .right-button {
+  color: #fff;
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  font-family: 'NEXONGothic';
+}
+
+.slider-button .left-button {
+  left: 100px;
+}
+
+.slider-button .right-button {
+  right: 100px;
+}
+
+.festival {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 30px 100px; */
+  background-color: #eee;
+}
+
+.festival-write h3 {
+  font-family: 'GmarketSansMedium';
+  font-size: 24px;
+}
+
+.festival-write p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.festival-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.festival-info .festival-list .festival-img span {
+  display: block;
+  background-image: url(/images/festival1.png);
+  width: 140px;
+  height: 140px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.festival-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-write {
+  margin-left: 20px;
+}
+
+.info-write h3 {
+  font-family: 'GmarketSansMedium';
+  font-size: 22px;
+}
+
+.info-write .period {
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.info-write .info-text {
+  font-size: 14px;
 }
