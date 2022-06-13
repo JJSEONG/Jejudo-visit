@@ -1,3 +1,7 @@
+body {
+  height: 6000px;
+}
+
 /* header bg image */
 .bg-slider {
   position: relative;
@@ -315,6 +319,12 @@
 }
 
 /* second section */
+.container.travel {
+  background-image: url(/images/travelbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .container.travel .travel-text {
   text-align: center;
 }
@@ -337,22 +347,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 1;
 }
 
 .container.travel .travel-cards .travel-card {
-  width: 440px;
-  height: 440px;
   max-width: 440px;
   max-height: 440px;
   overflow: hidden;
   margin: 0 20px;
   border-radius: 20px;
-}
-
-.container.travel .travel-cards .travel-card img {
-  max-width: none;
-  display: block;
-  margin: 0 auto;
 }
 
 .container.travel .travel-cards .slider-button .left-button,
