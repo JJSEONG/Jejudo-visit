@@ -491,11 +491,13 @@ body {
 
 .container.video .youtube-video {
   position: relative;
-  padding-top: 56%;
+  padding-top: 38%;
   width: 100%;
   height: 0;
   border-radius: 20px;
   overflow: hidden;
+  max-width: 1000px;
+  max-height: 520px;
 }
 
 .container.video .youtube-video iframe {
