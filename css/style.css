@@ -535,6 +535,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+  height: 80px;
 }
 
 .container.activity .select-activity .inside-btn,
@@ -563,4 +564,62 @@ body {
   right: 0;
   background-color: #ffca3a;
   color: #fff;
+}
+
+.container.activity .inside-activity h3 {
+  font-family: "GmarketSansMedium";
+  font-size: 32px;
+  text-align: center;
+  margin: 120px auto 100px;
+}
+
+.container.activity .inside-activity h3 .accent {
+  color: #ffca3a;
+}
+
+.container.activity .inside-activity .left-activity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container.activity .inside-activity .left-activity .activity-pic {
+  max-width: 680px;
+  max-height: 680px;
+  overflow: hidden;
+}
+
+.container.activity .inside-activity .left-activity .activity-pic img {
+  width: 100%;
+  max-width: none;
+}
+
+.container.activity .inside-activity .left-activity .activity-txt {
+  margin-left: 100px;
+  width: 700px;
+}
+
+.container.activity .inside-activity .left-activity .activity-txt h4 {
+  font-family: "GmarketSansMedium";
+  font-size: 46px;
+}
+
+.container.activity .inside-activity .left-activity .activity-txt .address {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 160px;
+}
+
+.container.activity .inside-activity .left-activity .activity-txt .address p {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.container.activity .inside-activity .left-activity .activity-txt .activity-desc p {
+  font-size: 22px;
+  line-height: 40px;
 }
