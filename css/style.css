@@ -623,3 +623,51 @@ body {
   font-size: 22px;
   line-height: 40px;
 }
+
+.container.activity .inside-activity .right-activity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin: 140px auto;
+}
+
+.container.activity .inside-activity .right-activity .activity-pic {
+  max-width: 680px;
+  max-height: 680px;
+  overflow: hidden;
+}
+
+.container.activity .inside-activity .right-activity .activity-pic img {
+  width: 100%;
+  max-width: none;
+}
+
+.container.activity .inside-activity .right-activity .activity-txt {
+  margin-right: 100px;
+  width: 700px;
+  text-align: right;
+}
+
+.container.activity .inside-activity .right-activity .activity-txt h4 {
+  font-family: "GmarketSansMedium";
+  font-size: 46px;
+}
+
+.container.activity .inside-activity .right-activity .activity-txt .address {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 160px;
+}
+
+.container.activity .inside-activity .right-activity .activity-txt .address p {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.container.activity .inside-activity .right-activity .activity-txt .activity-desc p {
+  font-size: 22px;
+  line-height: 40px;
+}
