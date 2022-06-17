@@ -1,19 +1,25 @@
-body {
-  height: 10000px;
-}
-
 /* header bg image */
 .bg-slider {
   position: relative;
-  background-image: url(/images/bg1.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 900px;
+  max-width: 100%;
+  max-height: 900px;
+  overflow: hidden;
 }
+
+.bg-slider .bg-img {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-slider .bg-img img {
+  max-width: none;
+  height: 100%;
+}
+
 /* navigation */
 .nav {
   position: absolute;
+  top: 0;
   width: 100%;
   height: 120px;
 }
@@ -39,15 +45,38 @@ body {
 .navlist li {
   font-family: 'GmarketSansMedium';
   margin: 0 20px;
-}
+} 
 
 .navlist li a {
+  position: relative;
   font-size: 22px;
   color: #fff;
+  transition: all 0.5s;
+  padding: 5px 0;
 }
+
+.navlist li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 4px;
+  background-color: #ffca3a;
+  transition: all 0.4s;
+}
+
+.navlist li a:hover {
+  color: #ffca3a;
+}
+
+.navlist li a:hover::before {
+  width: 100%;
+}
+
 /* dimmed-layer */
 .dimmed-layer {
   position: absolute;
+  top: 0;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
@@ -144,6 +173,17 @@ body {
   position: absolute;
   top: 50%;
   font-family: 'NEXONGothic';
+  cursor: pointer;
+}
+
+.bg-slider .slider-button .left-button::before {
+  content: '<';
+  position: absolute;
+}
+
+.bg-slider .slider-button .right-button::before {
+  content: '>';
+  position: absolute;
 }
 
 .slider-button .left-button {
@@ -162,10 +202,12 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #eee;
+  padding: 0 60px;
 }
 
 .festival-write {
   width: 400px;
+  max-width: 400px;
 }
 
 .festival-write h3 {
@@ -183,10 +225,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1260px;
 }
 
 .festival-list a {
-  width: 420px;
+  max-width: 420px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,8 +430,8 @@ body {
   position: absolute;
   bottom: 0;
   width: 70%;
-  opacity: 0;
-  transition: all 0.8s;
+  display: none;
+  transition: width 0.8s;
 }
 
 .container.travel .travel-cards .travel-card .travel-dimmed .travel-info button {
@@ -413,7 +456,7 @@ body {
 .container.travel .travel-cards .travel-card .travel-dimmed:hover .travel-info {
   position: relative;
   margin-top: 30px;
-  opacity: 1;
+  display: block;
 }
 
 .container.travel .travel-cards .travel-card .travel-dimmed h3 {
@@ -423,7 +466,23 @@ body {
 }
 
 .container.travel .travel-cards .travel-card .travel-dimmed p {
-  font-size: 24px;
+  font-size: 16px;
+}
+
+.container.travel .travel-cards .travel-card .travel-dimmed p .place {
+  display: inline-block;
+  width: 16px;
+  height: 22px;
+  background-image: url(/images/place-yellow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.container.travel .travel-cards .travel-card .travel-dimmed .travel-info p {
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .container.travel .etcbtn {
@@ -878,4 +937,49 @@ body {
   font-family: "GmarketSansMedium";
   text-align: center;
   font-size: 36px;
+}
+
+.container.footer {
+  width: 100%;
+  height: 400px;
+  background-color: #85858e;
+  max-width: 1920px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container.footer .footer-txt {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+.container.footer .footer-txt p {
+  line-height: 48px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.container.footer .footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container.footer .footer-icon ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container.footer .footer-icon ul li {
+  margin: 0 40px;
+}
+
+.container.footer .footer-icon ul li a img {
+  max-width: 50px;
+  max-height: 50px;
 }
