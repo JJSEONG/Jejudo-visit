@@ -1,0 +1,161 @@
+/* travel section */
+.container.travel {
+  position: relative;
+  background-image: url(/images/travelbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
+.container.travel .travel-text {
+  text-align: center;
+}
+.container.travel .travel-text h3 {
+  font-family: "GmarketSansMedium";
+  font-size: 52px;
+}
+
+.container.travel .travel-text h3 .accent {
+  color: #ffca3a;
+}
+
+.container.travel .travel-text p {
+  font-size: 26px;
+  margin: 30px 0;
+}
+
+.container.travel .travel-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+}
+
+.container.travel .travel-cards .travel-card {
+  position: relative;
+  max-width: 440px;
+  max-height: 440px;
+  margin: 0 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container.travel .travel-cards .travel-card .travel-img {
+  width: 100%;
+  height: 100%;
+}
+
+.container.travel .travel-cards .travel-card .travel-img img {
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.container.travel .travel-cards .travel-card .travel-dimmed {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s;
+}
+
+.container.travel .travel-cards .travel-card .travel-dimmed .travel-info {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  display: none;
+  transition: width 0.8s;
+}
+
+.container.travel .travel-cards .travel-card .travel-dimmed .travel-info button {
+  width: 140px;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  margin-top: 40px;
+}
+
+.container.travel .travel-cards .travel-card .travel-dimmed .travel-info button a {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.container.travel .travel-cards .travel-card .travel-dimmed:hover {
+  height: 100%;
+}
+
+.container.travel .travel-cards .travel-card .travel-dimmed:hover .travel-info {
+  position: relative;
+  margin-top: 30px;
+  display: block;
+}
+
+.container.travel .travel-cards .travel-card .travel-dimmed h3 {
+  font-family: "GmarketSansMedium";
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.container.travel .travel-cards .travel-card .travel-dimmed p {
+  font-size: 16px;
+}
+
+.container.travel .travel-cards .travel-card .travel-dimmed p .place {
+  display: inline-block;
+  width: 16px;
+  height: 22px;
+  background-image: url(/images/place-yellow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.container.travel .travel-cards .travel-card .travel-dimmed .travel-info p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.container.travel .etcbtn {
+  font-family: "GmarketSansMedium";
+  font-size: 24px;
+  text-align: center;
+  margin: 50px auto 0;
+  background-color: #ffca3a;
+  border-radius: 14px;
+  max-width: 400px;
+  line-height: 60px;
+}
+
+.container.travel .slider-button .left-button,
+.container.travel .slider-button .right-button {
+  color: #000;
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  font-family: 'NEXONGothic';
+  cursor: pointer;
+}
+
+.container.travel .slider-button .left-button::before {
+  content: '<';
+  position: absolute;
+  left: -150px;
+  transform: translateY(-50%);
+}
+
+.container.travel .slider-button .right-button::before {
+  content: '>';
+  position: absolute;
+  right: -150px;
+  transform: translateY(-50%);
+}

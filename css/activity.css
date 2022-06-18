@@ -1,0 +1,180 @@
+/* activity Section */
+.container.activity {
+  max-width: 1920px;
+}
+
+.container.activity .activity-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container.activity .activity-text h3 {
+  font-family: "GmarketSansMedium";
+  font-size: 52px;
+}
+
+.container.activity .activity-text h3 .accent {
+  color: #ffca3a;
+}
+
+.container.activity .select-activity {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  height: 80px;
+}
+
+.container.activity .select-activity .inside-btn,
+.container.activity .select-activity .outside-btn {
+  position: absolute;
+  width: 50%;
+  height: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "GmarketSansMedium";
+  font-size: 32px;
+  border-radius: 20px 20px 0 0;
+  cursor: pointer;
+}
+
+.container.activity .select-activity .inside-btn {
+  top: 0;
+  left: 0;
+  box-shadow: 0 -6px 5px 0.2px rgb(0, 0, 0, 0.1)
+}
+
+.container.activity .select-activity .outside-btn {
+  top: 0;
+  right: 0;
+  background-color: #ffca3a;
+  color: #fff;
+}
+
+.container.activity .inside-activity h3 {
+  font-family: "GmarketSansMedium";
+  font-size: 32px;
+  text-align: center;
+  margin: 120px auto 100px;
+}
+
+.container.activity .inside-activity h3 .accent {
+  color: #ffca3a;
+}
+
+.container.activity .inside-activity .left-activity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container.activity .inside-activity .left-activity .activity-pic {
+  max-width: 680px;
+  max-height: 680px;
+  overflow: hidden;
+}
+
+.container.activity .inside-activity .left-activity .activity-pic img {
+  width: 100%;
+  max-width: none;
+}
+
+.container.activity .inside-activity .left-activity .activity-txt {
+  margin-left: 100px;
+  width: 700px;
+}
+
+.container.activity .inside-activity .left-activity .activity-txt h4 {
+  font-family: "GmarketSansMedium";
+  font-size: 46px;
+}
+
+.container.activity .inside-activity .left-activity .activity-txt .address {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 160px;
+}
+
+.container.activity .inside-activity .left-activity .activity-txt .address p {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.container.activity .inside-activity .left-activity .activity-txt .activity-desc p {
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.container.activity .inside-activity .right-activity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin: 140px auto;
+}
+
+.container.activity .inside-activity .right-activity .activity-pic {
+  max-width: 680px;
+  max-height: 680px;
+  overflow: hidden;
+}
+
+.container.activity .inside-activity .right-activity .activity-pic img {
+  width: 100%;
+  max-width: none;
+}
+
+.container.activity .inside-activity .right-activity .activity-txt {
+  margin-right: 100px;
+  width: 700px;
+  text-align: right;
+}
+
+.container.activity .inside-activity .right-activity .activity-txt h4 {
+  font-family: "GmarketSansMedium";
+  font-size: 46px;
+}
+
+.container.activity .inside-activity .right-activity .activity-txt .address {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 160px;
+}
+
+.container.activity .inside-activity .right-activity .activity-txt .address p {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.container.activity .inside-activity .right-activity .activity-txt .activity-desc p {
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.container.activity .inside-activity .etc-btn {
+  width: 400px;
+  height: 60px;
+  background-color: #ffca3a;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container.activity .inside-activity .etc-btn p {
+  font-family: "GmarketSansMedium";
+  text-align: center;
+  font-size: 22px;
+}
