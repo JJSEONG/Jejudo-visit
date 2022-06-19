@@ -10,17 +10,48 @@
 
   const bgindex = Object.keys(bgslider)
 
-  const totalbg = bgslider.length
+  const totalbg = bgslider.length - 1
+  const initbg = 0
 
-  const initbg = bgslider[parseInt(bgindex[0])]
+  let index = 0;
 
-  initbg.classList.add('active')
+  let prevbg = bgslider[bgindex[totalbg - index]]
+  let currentbg = bgslider[bgindex[index]]
+  let nextbg = bgslider[bgindex[index + 1]]
+
+  console.log(prevbg)
+  console.log(currentbg)
+  console.log(nextbg)
+
+  // currentbg.classList.add('active')
 
   prevbtn.addEventListener('click', () => {
-    alert('왼쪽이동')
+    if (index > initbg) {
+      index--
+      let prevbg = bgslider[bgindex[index - 1]]
+      let currentbg = bgslider[bgindex[index]]
+    
+      currentbg.classList.add('active')
+
+      console.log(index)
+    }
   })
 
   nextbtn.addEventListener('click', () => {
-    initbg.classList.remove('active')
+    if (index < totalbg) {
+      index++
+      let prevbg = bgslider[bgindex[index - 1]]
+      let currentbg = bgslider[bgindex[index]]
+      let nextbg = bgslider[bgindex[index + 1]]
+      
+      prevbg.classList.add('prev')
+      currentbg.classList.add('active')
+      nextbg.classList.add('next')
+
+      prevbg.classList.remove('active')
+      nextbg.classList.remove('active')
+
+      console.log(index)
+    }
   })
 })()
